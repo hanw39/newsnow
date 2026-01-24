@@ -37,6 +37,14 @@ export const originSources = {
     type: "realtime",
     interval: Time.Common,
   },
+  "claudeblog": {
+    name: "Claude Blog",
+    color: "orange",
+    home: "https://claude.com/blog/",
+    column: "tech",
+    type: "realtime",
+    interval: Time.Common,
+  },
   "v2ex": {
     name: "V2EX",
     color: "slate",
