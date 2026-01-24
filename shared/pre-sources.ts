@@ -30,7 +30,7 @@ export const originSources = {
     home: "https://developers.googleblog.com/",
   },
   "anthropicengineering": {
-    name: "Anthropic Engineering Blog",
+    name: "Anthropic Eng Blog",
     color: "gray",
     home: "https://www.anthropic.com/engineering/",
     column: "tech",
