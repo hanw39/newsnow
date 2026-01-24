@@ -266,6 +266,14 @@ export const originSources = {
     interval: Time.Common,
     home: "https://openai.com/",
   },
+  "googleblog": {
+    name: "Google Developers",
+    color: "blue",
+    column: "tech",
+    type: "realtime",
+    interval: Time.Common,
+    home: "https://developers.googleblog.com/",
+  },
   "producthunt": {
     name: "Product Hunt",
     color: "red",
