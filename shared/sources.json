@@ -31,6 +31,14 @@
     "color": "orange",
     "interval": 600000
   },
+  "langchainblog": {
+    "name": "LangChain Blog",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://claude.com/blog",
+    "color": "slate",
+    "interval": 600000
+  },
   "v2ex": {
     "redirect": "v2ex-share",
     "name": "V2EX",

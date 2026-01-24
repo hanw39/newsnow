@@ -45,6 +45,14 @@ export const originSources = {
     type: "realtime",
     interval: Time.Common,
   },
+  "langchainblog": {
+    name: "LangChain Blog",
+    color: "slate",
+    home: "https://www.blog.langchain.com/",
+    column: "tech",
+    type: "realtime",
+    interval: Time.Common,
+  },
   "v2ex": {
     name: "V2EX",
     color: "slate",
