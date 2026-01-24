@@ -1,27 +1,21 @@
-import { XMLParser } from "fast-xml-parser"
+import type { NewsItem } from "@shared/types"
 
 export default defineSource(async () => {
-  const res = await fetch(
-    "https://developers.googleblog.com/feeds/posts/default?alt=rss",
-  )
+  const rss = await rss2json("https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml")
+  if (!rss) return []
 
-  const xml = await res.text()
+  const news: NewsItem[] = []
+  for (const item of rss.items) {
+    news.push({
+      id: item.id,
+      title: item.title,
+      url: item.link,
+      extra: {
+        date: item.created,
+        hover: item.description,
+      },
+    })
+  }
 
-  const parser = new XMLParser({
-    ignoreAttributes: false,
-  })
-
-  const data = parser.parse(xml)
-
-  const items = data?.rss?.channel?.item
-  if (!Array.isArray(items)) return []
-
-  return items.map(item => ({
-    id: item.guid,
-    title: item.title,
-    url: item.link,
-    extra: {
-      hover: item.description,
-    },
-  }))
+  return news
 })
