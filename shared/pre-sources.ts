@@ -274,6 +274,14 @@ export const originSources = {
     interval: Time.Common,
     home: "https://developers.googleblog.com/",
   },
+  "anthropicengineering": {
+    name: "Anthropic Engineering Blog",
+    color: "gray",
+    home: "https://www.anthropic.com/engineering/",
+    column: "tech",
+    type: "realtime",
+    interval: Time.Common,
+  },
   "producthunt": {
     name: "Product Hunt",
     color: "red",

@@ -338,6 +338,14 @@
     "color": "blue",
     "interval": 1800000
   },
+  "anthropicengineering": {
+    "name": "Anthropic Engineering Blog",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://www.anthropic.com/engineering",
+    "color": "gray",
+    "interval": 600000
+  },
   "producthunt": {
     "name": "Product Hunt",
     "type": "hottest",
