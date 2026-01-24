@@ -22,6 +22,7 @@ export default defineSource(async () => {
     url: item.link,
     extra: {
       hover: item.description,
+      date: item.pubDate,
     },
   }))
 })
